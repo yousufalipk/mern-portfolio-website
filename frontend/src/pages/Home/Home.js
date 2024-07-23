@@ -1,35 +1,45 @@
-import React from 'react';
-import './Home.css';
-import Typewriter from 'typewriter-effect';
-import Resume from '../../assets/docx/resume.pdf';
+import React from "react";
+import Typewriter from "typewriter-effect";
+import Resume from "../../assets/docx/resume.pdf";
+import "./Home.css";
 
 const Home = () => {
+
   return (
     <>
-      <div className="contianer-fluid home-container">
+      <div className="container-fluid home-container">
         <div className="container home-content">
-          <h1>Hi I'm a</h1>
-          <h2>
-          <Typewriter
-            options={{
-              strings: [
-                'Full Stack Developer!', 
-                'Mern Stack Developer!',
-                'React native developer!'
-              ],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-          </h2>
-          <div className="home-buttons">
-            <button className="btn btn-hire">Hire Me</button>
-            <a className="btn btn-cv" href={Resume} download="Ameer Yousuf Resume.pdf">My Resume</a>
-          </div>
+            <h2>Hi 👋 I'm a</h2>
+            <h1>
+              <Typewriter
+                options={{
+                  strings: [
+                    "FullStack Developer!",
+                    "Mern Stack Developer!",
+                    "React native developer!",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h1>
+            <div className="home-buttons">
+              <a
+                className="btn btn-hire"
+                href="https://api.whatsapp.com/send?phone=1234567890"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Hire Me
+              </a>
+              <a className="btn btn-cv" href={Resume} download="your_name.pdf">
+                My Resume
+              </a>
+            </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default Home;
