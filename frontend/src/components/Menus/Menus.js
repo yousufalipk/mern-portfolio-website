@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Menus.css";
-import ProfilePic from '../../Img/profile.jpg';
+import ProfilePic from '../../assets/images/profile.jpg';
 import {FcHome, FcAbout, FcPortraitMode, FcBiotech, FcReadingEbook, FcVideoProjector, FcVoicePresentation, FcBusinessContact} from 'react-icons/fc';
 const Menus = ({toggle}) => {
   return (
