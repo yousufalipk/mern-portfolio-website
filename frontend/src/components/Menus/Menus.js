@@ -1,108 +1,208 @@
-import React from 'react'
+import React from "react";
 import "./Menus.css";
+import { Link } from "react-scroll";
+import {
+  FcAbout,
+  FcBiotech,
+  FcBusinessContact,
+  FcHome,
+  FcPortraitMode,
+  FcReadingEbook,
+  FcVideoProjector,
+} from "react-icons/fc";
 import ProfilePic from '../../assets/images/profile.jpg';
-import {FcHome, FcAbout, FcPortraitMode, FcBiotech, FcReadingEbook, FcVideoProjector, FcVoicePresentation, FcBusinessContact} from 'react-icons/fc';
-const Menus = ({toggle}) => {
+
+const Menus = ({ toggle }) => {
   return (
     <>
-      {toggle ? 
-          (
-            <>
-              <div className="navbar-profile-pic">
-                <img src={ProfilePic} alt="profile pic" />
-              </div>
-              <div className="nav-items">
-                <div className="nav-item">
-                  {/* NavLink - 1 */}
-                  <div className="nav-link">
-                    <FcHome /> 
+      {toggle ? (
+        <>
+            <div className="navbar-profile-pic">
+              <img
+                src={ProfilePic}
+                alt="profile pic"
+              />
+            </div>
+            <div className="nav-items">
+              <div className="nav-item">
+                <div className="nav-link">
+                  <Link
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={100}
+                  >
+                    <FcHome />
                     Home
-                  </div>
-                  {/* NavLink - 2 */}
-                  <div className="nav-link">
-                    <FcAbout /> 
+                  </Link>
+                </div>
+                <div className="nav-link">
+                  <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={100}
+                  >
+                    <FcAbout />
                     About
-                  </div>
-                  {/* NavLink - 3 */}
-                  <div className="nav-link">
-                    <FcPortraitMode /> 
-                    Work Experience
-                  </div>
-                  {/* NavLink - 4 */}
-                  <div className="nav-link">
-                    <FcBiotech /> 
-                    Tech Stack
-                  </div>
-                  {/* NavLink - 5 */}
-                  <div className="nav-link">
-                    <FcReadingEbook /> 
+                  </Link>
+                </div>
+                <div className="nav-link">
+                  <Link
+                    to="education"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={100}
+                  >
+                    <FcReadingEbook />
                     Education
-                  </div>
-                  {/* NavLink - 6 */}
-                  <div className="nav-link">
-                    <FcVideoProjector /> 
+                  </Link>
+                </div>
+
+                <div className="nav-link">
+                  <Link
+                    to="techstack"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={100}
+                  >
+                    <FcBiotech />
+                    Tech Stack
+                  </Link>
+                </div>
+
+                <div className="nav-link">
+                  <Link
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={100}
+                  >
+                    <FcVideoProjector />
                     Projects
-                  </div>
-                  {/* NavLink - 7 */}
-                  <div className="nav-link">
-                    <FcVoicePresentation /> 
-                    Testimonial
-                  </div>
-                  {/* NavLink - 8 */}
-                  <div className="nav-link">
-                    <FcBusinessContact /> 
+                  </Link>
+                </div>
+                <div className="nav-link">
+                  <Link
+                    to="work"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={100}
+                  >
+                    <FcPortraitMode />
+                    Work Experince
+                  </Link>
+                </div>
+                <div className="nav-link">
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={100}
+                  >
+                    <FcBusinessContact />
                     Contact
-                  </div>
+                  </Link>
                 </div>
               </div>
-            </>
-          ) 
-          :
-          (
-            <>
-              <div className="nav-items">
-                <div className="nav-item">
-                  {/* NavLink - 1 */}
-                  <div className="nav-link">
-                    <FcHome title="Home" />
-                  </div>
-                  {/* NavLink - 2 */}
-                  <div className="nav-link">
-                    <FcAbout title="About" />
-                  </div>
-                  {/* NavLink - 3 */}
-                  <div className="nav-link">
-                    <FcPortraitMode title="Work Experience" />
-                  </div>
-                  {/* NavLink - 4 */}
-                  <div className="nav-link">
-                    <FcBiotech title="Tech Stack" />
-                  </div>
-                  {/* NavLink - 5 */}
-                  <div className="nav-link">
-                    <FcReadingEbook title="Education" />
-                  </div>
-                  {/* NavLink - 6 */}
-                  <div className="nav-link">
-                    <FcVideoProjector title="Projects" />
-                  </div>
-                  {/* NavLink - 7 */}
-                  <div className="nav-link">
-                    <FcVoicePresentation title="Testimonial" />
-                  </div>
-                  {/* NavLink - 8 */}
-                  <div className="nav-link">
-                    <FcBusinessContact title="Contact" />
-                  </div>
-                </div>
+            </div>
+        </>
+      ) : (
+        <>
+          <div className="nav-items">
+            <div className="nav-item">
+              <div className="nav-link">
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcHome />
+                </Link>
               </div>
-            </>
-          )
-      }
+              <div className="nav-link">
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcAbout />
+                </Link>
+              </div>
+              <div className="nav-link">
+                <Link
+                  to="education"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcReadingEbook />
+                </Link>
+              </div>
+
+              <div className="nav-link">
+                <Link
+                  to="techstack"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcBiotech />
+                </Link>
+              </div>
+
+              <div className="nav-link">
+                <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcVideoProjector />
+                </Link>
+              </div>
+              <div className="nav-link">
+                <Link
+                  to="work"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcPortraitMode />
+                </Link>
+              </div>
+              <div className="nav-link">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcBusinessContact />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </>
-  )
-}
+  );
+};
 
 export default Menus;
-
-

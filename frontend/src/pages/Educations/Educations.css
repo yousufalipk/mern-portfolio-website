@@ -23,3 +23,25 @@
     font-weight: 200;
     font-size: large;
 }
+
+/* ========= DARK MODE ============ */
+
+#dark .education {
+    background-color: rgba(255, 255, 255, 0.095);
+}
+
+#dark .education h2 {
+    color: white;
+}
+
+#dark .education hr {
+    color: white;
+}
+
+#dark .education .vertical-timeline-element-title {
+    color: #ffffff;
+}
+
+#dark .education .vertical-timeline-element-subtitle {
+    color: #ffffff;
+}
