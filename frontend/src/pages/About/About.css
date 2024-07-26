@@ -34,7 +34,7 @@
 
 #dark .about {
     box-shadow: none;
-    background-color: rgba(255, 255, 255, 0.095);
+    background-color: none;
 }
 
 #dark .about-content h1 {

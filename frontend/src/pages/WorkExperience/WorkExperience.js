@@ -6,24 +6,27 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "./WorkExperience.css";
+import { useTheme } from '../../context/ThemeContext';
+
 const WorkExperience = () => {
+  const [theme, setTheme ] = useTheme();
   return (
     <>
       <div className="work" id="work">
         <div className="work-exp">
-          <h2 className="text-center text-uppercase">
-            Work Experience
-          </h2>
+        <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
+          Work Experience
+        </h2>
           <hr />
-          <VerticalTimeline lineColor="#1e1e2c">
+          <VerticalTimeline lineColor="#3b8ff3">
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "white", color: "#1e1e2c" }}
+              contentStyle={theme === 'light' ? ({ background: 'white' }) : ({ background: '#595959' })}
               contentArrowStyle={{
                 borderRight: "7px solid  white",
               }}
-              date="July 2023 - August 2023"
-              iconStyle={{ background: "#1e1e2c", color: "#fff" }}
+              date={<span className="custom-date">July 2023 - August 2023</span>}
+              iconStyle={{ background: "#019cf8", color: "#fff" }}
               icon={<SiReact />}
             >
               <h3 className="vertical-timeline-element-title">
@@ -38,12 +41,12 @@ const WorkExperience = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "white", color: "#1e1e2c" }}
+              contentStyle={theme === 'light' ? ({ background: 'white' }) : ({ background: '#595959' })}
               contentArrowStyle={{
                 borderRight: "7px solid  white",
               }}
-              date="June 2021 - Sept 2021"
-              iconStyle={{ background: "#1e1e2c", color: "#fff" }}
+              date={<span className="custom-date">June 2021 - Sept 2021</span>}
+              iconStyle={{ background: "#019cf8", color: "#fff" }}
               icon={<SiReact />}
             >
               <h3 className="vertical-timeline-element-title">

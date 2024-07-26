@@ -5,7 +5,7 @@
 
 
 .home-content h1 {
-    color: #e0b50f;
+    color: #019cf8;
     padding: 5px;
 }
 
@@ -19,20 +19,20 @@
 }
 
 .home-buttons .btn-hire {
-    background-color: #3b8ff3;
+    background-color: #019cf8;
     color: white;
     width: 150px;
 }
 
 .home-buttons .btn-hire:hover {
     background-color: white;
-    color: #3b8ff3;
+    color: #019cf8;
     width: 200px;
     transition: 1s;
 }
 
 .home-buttons .btn-cv {
-    background-color: #f29f67;
+    background-color: #18315a;
     color: white;
     margin-left: 15px;
 }

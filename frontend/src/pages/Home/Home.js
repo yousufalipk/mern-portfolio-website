@@ -4,6 +4,7 @@ import Typewriter from "typewriter-effect";
 import Resume from "../../assets/docx/resume.pdf";
 import "./Home.css";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import Fade from 'react-reveal/Fade';
 
 const Home = () => {
   const [theme, setTheme ] = useTheme()
@@ -19,20 +20,23 @@ const Home = () => {
           {theme === 'light' ? (<BsFillMoonStarsFill size={30}/>) : (<BsFillSunFill size={30}/>)}
         </div> 
         <div className="container home-content">
-            <h2>Hi 👋 I'm a</h2>
-            <h1>
-              <Typewriter
-                options={{
-                  strings: [
-                    "FullStack Developer!",
-                    "Mern Stack Developer!",
-                    "React native developer!",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </h1>
+            <Fade right>
+              <h2>Hi 👋 I'm a</h2>
+              <h1>
+                <Typewriter
+                  options={{
+                    strings: [
+                      "FullStack Developer!",
+                      "Mern Stack Developer!",
+                      "Software Engineer!",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </h1>
+            </Fade>
+            <Fade bottom>
             <div className="home-buttons">
               <a
                 className="btn btn-hire"
@@ -42,10 +46,11 @@ const Home = () => {
               >
                 Hire Me
               </a>
-              <a className="btn btn-cv" href={Resume} download="your_name.pdf">
+              <a className="btn btn-cv" href={Resume} download="AmeerYousuf_Resume.pdf">
                 My Resume
               </a>
             </div>
+            </Fade>
         </div>
       </div>
     </>

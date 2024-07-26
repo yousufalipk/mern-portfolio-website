@@ -9,30 +9,35 @@
 
 .work-exp h2 {
     font-weight: bold;
-    color: #1e1e2c;
+    color: #019cf8 !important;
 }
 
 .work-exp hr {
-    color: #1e1e2c;
+    color: #019cf8 !important;
     width: 400px;
     margin: 10px auto;
 }
 
 .work-exp .vertical-timeline-element-title {
-    color: #1e1e2c;
+    color: #019cf8;
 }
 
 .work-exp .vertical-timeline-element-subtitle {
-    color: #1e1e2c78;
+    color: #019cf8;
 }
 
 
 
-/* ===== DARK MODE ========== */
-#dark .work {
-    background-color: #643a6b;
+/* ========= DARK MODE ============ */
+
+#dark .work-exp {
+    background-color: none;
+}
+
+#dark .custom-date {
+    color: white;
 }
 
 #dark .work-exp h2 {
-    color: white;
+    color: white !important;
 }

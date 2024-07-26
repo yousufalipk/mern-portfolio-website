@@ -58,9 +58,9 @@ const Contact = () => {
                     <div className="row">
                       <h6>
                         Contact With
-                        <BsLinkedin color="blue" size={30} className="ms-2" />
+                        <BsLinkedin color="#019cf8" size={30} className="ms-2" />
                         <BsGithub color="black" size={30} className="ms-2" />
-                        <BsFacebook color="blue" size={30} className="ms-2" />
+                        <BsFacebook color="#019cf8" size={30} className="ms-2" />
                       </h6>
                     </div>
 
@@ -69,7 +69,7 @@ const Contact = () => {
                       <small className="or text-center">OR</small>
                       <div className="line" />
                     </div>
-                    <div className="row px-3">
+                    <div className="row px-3 custom-inputs">
                       <input
                         type="text"
                         name="name"

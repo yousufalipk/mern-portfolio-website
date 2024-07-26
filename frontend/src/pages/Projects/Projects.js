@@ -3,6 +3,7 @@ import "./Projects.css";
 import ProjectImage1 from '../../assets/images/Projects/p1.png';
 import ProjectImage2 from '../../assets/images/Projects/p2.png';
 import ProjectImage3 from '../../assets/images/Projects/p3.jpeg';
+import Flip from 'react-reveal/Flip';
 
 const Projects = () => {
   return (
@@ -17,6 +18,7 @@ const Projects = () => {
         </p>
         {/* card design */}
         <div className="row" id="ads">
+          <Flip>
             {/* Project 1 */}
             <div className="col-md-4">
               <div className="card rounded">
@@ -101,6 +103,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
+          </Flip>
         </div>
       </div>
     </>
