@@ -46,3 +46,10 @@
 #dark .sidebar-section {
     background-color: transparent;
 }
+
+/* ==== MOBILE VIEW ========== */
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}

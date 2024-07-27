@@ -32,7 +32,18 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.footer {
+  width: 65%;
+  margin-top: 30px;
+}
+
+.container hr {
+  color: gray;
+  margin-top: 30px;
 }
